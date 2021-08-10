@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive Portfolio Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">JessTsai</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <!-- <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li> -->
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i> Portfolio
+              </a>
+            </li>
+            <!-- <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i> Contact Me
+              </a>
+            </li> -->
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://github.com/jesstsaifun7"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a href="#" class="home__social-icon icon1">
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">蔡 芳 琦</h1>
+              <h3 class="home__subtitle">Tsai Fang Chi</h3>
+              <p class="home__description">
+                一個大學志願全填中文系， <br />
+                但半路出家學程式的女子。
+              </p>
+
+              <!-- <a href="#contact" class="button button--flex">
+                Contact Me <i class="uil uil-message button__icon"></i>
+              </a> -->
+            </div>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+
+      <section class="about section" id="about">
+        <h2 class="section__title">關於我</h2>
+        <div class="about__container container">
+          <p class="about__description">
+            hi我是芳琦， <br />
+            畢業於政大中文系和數位内容學程，是一個不務正業的中文人。 <br />
+
+            學過寫遊戲、app，上架過podcast，做過動畫，上過UI/UX的課程，也曾經參加活動擔任行銷、公關。
+            <br />
+          </p>
+          <div class="about__button">
+            <a download="" href="/assets/pdf/cv.pdf" class="button button--flex"
+              >Download CV <i class="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title">Qualification</h2>
+        <div class="qualification__container container grid">
+          <div class="qualification__content grid">
+            <div class="qualification__tabs">
+              <div
+                class="qualification__button button-flex qualification__active"
+                data-target="#education"
+              >
+                <i class="uil uil-graduation-cap qualification__icon"></i>
+                Education
+              </div>
+              <div
+                class="qualification__button button-flex"
+                data-target="#experience"
+              >
+                <i class="uil uil-briefcase-alt qualification__icon"></i>
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="qualification__section">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">中文系</h3>
+                  <span class="qualification__subtitle">國立政治大學</span>
+                  <div class="qulification__calender">
+                    <i class="uil uil-schedule"></i>
+                    2018 - 2021
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qulification__rounder"></span>
+                  <span class="qulification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qulification__rounder"></span>
+                  <!-- <span class="qulification__line"></span> -->
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">數位内容學士學位學程</h3>
+                  <span class="qualification__subtitle">國立政治大學</span>
+                  <div class="qulification__calender">
+                    <i class="uil uil-schedule"></i>
+                    2019 - 2021
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="experience">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">公關</h3>
+                  <span class="qualification__subtitle">政大金旋獎</span>
+                  <div class="qulification__calender">
+                    <i class="uil uil-schedule"></i>
+                    2018/9 - 2019/6
+                  </div>
+                  <!-- <div class="qualification__description">
+                    •與各平台網路媒體、平面媒體、自媒體協調合作事宜，提高政大金旋獎曝光率<br /><br />
+                    • 提出並執行與平面插畫師合作事項，跨大網路宣傳效果<br /><br />
+                    •比賽吸引約500人參賽,並於華山舉行音樂節,單日總流動人次總計5000人<br />
+                  </div> -->
+                </div>
+
+                <div>
+                  <span class="qulification__rounder"></span>
+                  <span class="qulification__line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qulification__rounder"></span>
+                  <!-- <span class="qulification__line"></span> -->
+                </div>
+
+                <div>
+                  <h3 class="qualification__title">行銷企劃</h3>
+                  <span class="qualification__subtitle"
+                    >政大數位内容學士學位學程畢業製作</span
+                  >
+                  <div class="qulification__calender">
+                    <i class="uil uil-schedule"></i>
+                    2020/10 - 2021
+                  </div>
+                  <!-- <div class="qualification__description">
+                    • 宣傳活動發想及執行<br />
+                    • 粉專内容撰寫與經營
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Portfolio</h2>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/homecare.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">獨居長者居家照護系統</h3>
+                <h4 class="portfolio__subtitle">林口新創園跨界超越競賽</h4>
+                <p class="portfolio__description">
+                  以獨居長者居家照護為出發點，設計居家室内定位照護系統。<br />
+                </p>
+                <a
+                  href=""
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/政汪.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">政汪所歸</h3>
+                <h4 class="portfolio__subtitle">政大失物協尋系統</h4>
+                <p class="portfolio__description">
+                  解決政大失物協尋系統網站設計之問題。 <br />
+                </p>
+                <a
+                  href=""
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 3 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/jsgame.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">天黑請奔跑</h3>
+                <p class="portfolio__description">
+                  以晩歸安全問題發想，製作網頁互動遊戲。<br />
+
+                  使用工具：Javascript
+                </p>
+                <a
+                  href=""
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 4 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/3dgame.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Run Away From Covid-19</h3>
+                <p class="portfolio__description">
+                  這是一款病毒射擊遊戲，在專案中我負責UI設計與製作、部分程式撰寫。<br />
+
+                  ｜使用工具：Unity
+                </p>
+                <a
+                  href="https://github.com/jesstsaifun7/Run-Away-From-Covid-19.git"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 5 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/F7Lab.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">F7實驗室</h3>
+                <p class="portfolio__description">
+                  F7實驗室結合AR擴充實境和密室解謎，建構出擬真場景、詭譎氛圍，帶領玩家穿梭於虛實情節中，探究疑點，一步步接近真相。<br />
+
+                  ｜使用工具：Unity、Ps、Ai、FinalCutPro
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=-yQn38G-8Zg"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 6 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/lightSensor.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">不要怕有燈</h3>
+                <p class="portfolio__description">
+                  有了不要怕有燈之後，不用再害怕進到漆黑的房間找不到電燈開關啦！
+                  ｜使用工具：Arduino、超音波、光敏LDR、LED 5v
+                </p>
+                <a
+                  href="https://bflueurs.wixsite.com/website/副本-hw-04"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 7 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/tippity-tap.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Tippity Tap</h3>
+                <p class="portfolio__description">
+                  互相制定題目的Battle 打字遊戲！<br />
+
+                  ｜使用工具：Processing
+                </p>
+                <a
+                  href="https://github.com/jesstsaifun7/Tippity-Tap-.git"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 8 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/安全居家.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">安全居家</h3>
+                <p class="portfolio__description">
+                  使用CNN圖片辨識拍攝相片的人是否處於危險情況。<br />
+
+                  ｜使用工具：Google Colab、Python
+                </p>
+                <a
+                  href="https://drive.google.com/file/d/1O4dUGkxG4hPK327yg5jnVe1mdppSREF-/view"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 9 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="assets/img/april rain.png"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">April shower</h3>
+                <p class="portfolio__description">
+                  朋友畫圖我做動畫(ㆆᴗㆆ)
+                  <br />
+                  ｜使用工具：Ps、AE、Final Cut Pro
+                </p>
+                <a
+                  href="https://www.youtube.com/watch?v=S-1Li-4Bkwc"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 10 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/podcast.png" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">阿喬的客語時間</h3>
+                <p class="portfolio__description">
+                  和有二分之一客家血統的朋友一起錄的podcast，他主講我捧梗，也負責後期剪輯。
+                  <br />
+                </p>
+                <a
+                  href="https://www.pressplay.cc/channel/409FEA5A9FB7C13BC6CC25EC0866F930/album/85AE560153092FFA788A20DA1326C0E1"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!--==================== PORTFOLIO 11 ====================-->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="assets/img/DCT.jpg" alt="" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">數位内容畢製行銷</h3>
+                <p class="portfolio__description">
+                  負責畢製的活動企劃與粉專、ig的經營。<br />
+                  <br />
+                </p>
+                <a
+                  href="https://www.facebook.com/NCCUDCT12th/?ref=pages_you_manage"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  Read more<i class="uil uil-angle-right-b button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <!-- <section class="contact section" id="contact">
+        <h2 class="section__title">｜Contact Me</h2>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle">b.flueurs@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">怎麼稱呼您</label>
+                <input type="text" class="contact__input" />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">您的信箱</label>
+                <input type="email" class="contact__input" />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">您想對我說的話</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a href="" class="button button--flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section> -->
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <!-- <div>
+            <h1 class="footer__title">Jess Tsai</h1>
+          </div> -->
+
+          <!-- <ul class="footer__links">
+            <li>
+              <a href="#about" class="footer__link">About</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contactme" class="footer__link">Contactme</a>
+            </li>
+          </ul> -->
+
+          <p class="footer__copy">&#169; Tsai Fang Chi. All right reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
