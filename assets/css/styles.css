@@ -348,7 +348,7 @@ img {
   display: inline-block;
   font-size: var(--small-font-size);
   height: 2rem;
-  line-height: 1.77rem;
+  line-height: 2rem;
   border: 0.025rem solid var(--first-color);
   color: var(--first-color);
   padding: 0 1rem;
